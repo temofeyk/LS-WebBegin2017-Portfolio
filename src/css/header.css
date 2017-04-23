@@ -5,6 +5,7 @@
 .header {
     background: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 9px;
     margin-bottom: 25px;
 }
 
@@ -17,7 +18,11 @@
     float: left;
     width: 50%;
 }
+.header__left {
+    padding-top: 9px;
+}
 
 .header__right {
     text-align: right;
+    padding-top: 7px;
 }

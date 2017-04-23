@@ -7,10 +7,10 @@
 .about__text {
     height: 300px;
     overflow: auto;
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 }
 
 .textBlock p {
-    margin: 0;
-    margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }

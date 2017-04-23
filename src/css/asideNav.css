@@ -4,14 +4,20 @@
 
 .nav__link {
     display: block;
-    padding: 10px 0;
-    padding-right: 20px;
+    padding: 10px 25px 10px 0;
     color: #414141;
     text-decoration: none;
     border-right: 6px solid transparent;
     font-size: 18px;
 }
 
+.nav__linkIcon, .nav__linkText {
+   display: inline-block;
+   vertical-align: middle;
+}
+.nav__linkText {
+    margin-left: 13px;
+}
 .nav__link:hover {
     color: #33c1e3;
 }

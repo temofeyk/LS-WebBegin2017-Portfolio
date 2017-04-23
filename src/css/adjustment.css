@@ -2,9 +2,10 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'fira_sansregular';
+    font-family: 'fira_sansregular', Arial, sans-serif;
     background: #f6f6f6;
     line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
