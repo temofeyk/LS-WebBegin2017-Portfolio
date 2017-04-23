@@ -12,7 +12,7 @@ loaders.push({
     })
 });
 
-module.exports = {
+module.exports = [{
     entry: './src/index.js',
     output: {
         filename: '[hash].js',
@@ -31,7 +31,8 @@ module.exports = {
         }),
         new ExtractTextPlugin('styles.css'),
         new HtmlPlugin({
-            title: 'Портфолио',
+            environment: {indexSelected: true},
+            title: 'Обо мне',
             template: './index.hbs',
             filename: 'index.html',
             chunks: ['main'],
@@ -44,4 +45,68 @@ module.exports = {
         }),
         new CleanWebpackPlugin(['dist'])
     ]
-};
+},{
+    entry: './src/career.js',
+    output: {
+        filename: '[hash].js',
+        path: './dist'
+    },
+    devtool: 'source-map',
+    module: {
+        loaders
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            compress: {
+                drop_debugger: false
+            }
+        }),
+        new ExtractTextPlugin('career.css'),
+        new HtmlPlugin({
+            title: 'Карьера',
+            template: './career.hbs',
+            filename: 'career.html',
+            chunks: ['main'],
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                minifyCSS: true
+            },
+            favicon: './src/images/icons/favicon.ico'
+        })
+
+    ]
+},{
+    entry: './src/portfolio.js',
+    output: {
+        filename: '[hash].js',
+        path: './dist'
+    },
+    devtool: 'source-map',
+    module: {
+        loaders
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            compress: {
+                drop_debugger: false
+            }
+        }),
+        new ExtractTextPlugin('portfolio.css'),
+        new HtmlPlugin({
+            title: 'Портфолио',
+            template: './portfolio.hbs',
+            filename: 'portfolio.html',
+            chunks: ['main'],
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                minifyCSS: true
+            },
+            favicon: './src/images/icons/favicon.ico'
+        })
+
+    ]
+}];

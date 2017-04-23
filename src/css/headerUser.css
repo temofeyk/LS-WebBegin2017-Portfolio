@@ -1,0 +1,23 @@
+.user {
+    margin-top: 8px;
+}
+
+.user__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #bfbfbf;
+}
+
+.user__avatarPic {
+    display: block;
+}
+
+.user__name {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 250px;
+    font-size: 18px;
+    margin-left: 15px;
+}

@@ -1,0 +1,10 @@
+.career__pic {
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.career__picImg {
+    display: block;
+    min-width: 220px;
+    max-height: 220px;
+}

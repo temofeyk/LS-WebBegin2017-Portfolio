@@ -1,0 +1,33 @@
+.socials__link {
+    width: 32px;
+    height: 31px;
+    display: block;
+    background-image: url('../images/icons/socials.png');
+    background-repeat: no-repeat;
+}
+
+.socials__link:hover {
+    background-image: url("../images/icons/socialsHover.png");
+}
+
+.socials__link.socials__link_fb {
+    background-position: 0 0;
+}
+
+.socials__link.socials__link_vk {
+    background-position: -100px 0;
+}
+
+.socials__link.socials__link_tw {
+    background-position: -200px 0;
+}
+
+.socials__list {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.socials__item {
+    display: inline-block;
+}

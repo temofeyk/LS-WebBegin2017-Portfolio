@@ -1,0 +1,12 @@
+.about__pic {
+    display: inline-block;
+    border: 3px solid #fff;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.about__picItem {
+    max-width: 220px;
+    max-height: 220px;
+    display: block;
+}

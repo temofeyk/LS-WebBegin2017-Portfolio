@@ -1,0 +1,16 @@
+.textBlock {
+    color: #646464;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.about__text {
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+
+.textBlock p {
+    margin: 0;
+    margin-bottom: 5px;
+}

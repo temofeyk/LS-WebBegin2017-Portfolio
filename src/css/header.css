@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+}
+
+.header {
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+.header .container {
+    height: 80px;
+    position: relative;
+}
+
+.header__left, .header__right {
+    float: left;
+    width: 50%;
+}
+
+.header__right {
+    text-align: right;
+}

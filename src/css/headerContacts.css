@@ -1,0 +1,12 @@
+.contacts {
+    margin-top: 30px;
+}
+
+.contacts__trigger {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    color: #33c1e3;
+    background: url('../images/decor/dotted-border.png') 0 bottom repeat-x;
+    font-weight: bold;
+}

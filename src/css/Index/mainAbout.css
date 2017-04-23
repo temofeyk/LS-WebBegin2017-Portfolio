@@ -1,0 +1,28 @@
+.about:after, .about:before {
+    content: "";
+    display: table;
+}
+
+.about:after {
+    clear: both;
+}
+
+.about__left {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.about__right {
+    width: 56%;
+    float: right;
+}
+
+.contentTitle {
+    font-family: 'fira_sansmedium';
+    font-size: 35px;
+    color: #414141;
+    line-height: 38px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}

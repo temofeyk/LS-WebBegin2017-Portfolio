@@ -36,7 +36,10 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.1",
     "mocha": "^3.2.0",
+    "node-sass": "^4.5.2",
     "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.4.1",
     "webpack-dev-server": "^1.16.2"
   }
 }
