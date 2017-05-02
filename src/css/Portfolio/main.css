@@ -1,10 +1,5 @@
-.stuff {
-    width: 73%;
-    float: right;
-}
-
 .contentTitle {
-    font-family: 'fira_sansmedium';
+    font-family: 'fira_sansmedium', sans-serif;
     font-size: 35px;
     color: #414141;
     line-height: 38px;

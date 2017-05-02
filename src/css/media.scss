@@ -1,0 +1,126 @@
+@media screen and (max-width: 1200px) {
+  .wrapper,
+  .footer {
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 750px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .nav__list {
+    text-align: left;
+  }
+  .nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 29px;
+  }
+  .nav__item:first-child {
+    margin-left: 0;
+  }
+  .nav__link {
+    padding: 0;
+    border: 0 none;
+  }
+  .nav__item_active .nav__link {
+    font-weight: bold;
+    color: #32c3e5;
+  }
+  .stuff {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+  .header__left {
+    width: 75%;
+  }
+  .header__right {
+    width: 25%;
+  }
+  .contacts {
+    margin-top: 22px; }
+  .contacts .contacts__trigger {
+    background: url("../images/icons/phone.png") 0 0 no-repeat;
+  }
+  .contacts:hover .contacts__trigger {
+    background: url("../images/icons/phone-hover.png") 0 0 no-repeat;
+  }
+
+  .contacts__dropdown {
+    transform: translateX(0);
+    right: 0;
+    left: auto; }
+
+  .contacts__dropdownTriangle {
+    right: 0;
+    transform: translateX(0);
+    left: auto
+  }
+
+  .contacts__trigger {
+    text-indent: 9999px;
+    display: inline-block;
+    white-space: nowrap;
+    width: 32px;
+    height: 32px; }
+  .wrapper:after {
+    height: 95px;
+  }
+  .footer {
+    height: 95px;
+    margin-top: -95px;
+  }
+  .footer .container {
+    padding-top: 15px;
+  }
+  .copyright {
+    position: static;
+    text-align: center;
+  }
+  .socials__list {
+    position: static;
+    text-align: center;
+  }
+  .footer__left {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 0;
+  }
+  .user__name {
+    max-width: 150px;
+    font-size: 14px;
+    width: 56%;
+  }
+  .nav__list {
+    text-align: center;
+  }
+  .nav__item {
+    margin-left: 7%;
+  }
+  .nav__linkText {
+    font-size: 14px;
+  }
+  .nav__linkIcon {
+    display: none;
+  }
+ }

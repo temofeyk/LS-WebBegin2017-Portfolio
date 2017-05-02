@@ -1,0 +1,20 @@
+@import "../button.scss";
+.about__download {
+    text-align: right;
+}
+
+
+.about__downloadLinkIcon {
+    margin-right: 5px;
+}
+
+
+.about__downloadLinkIcon, .about__downloadLinkText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about__downloadLinkText {
+    margin-left: 8px;
+    padding-right: 24px;
+}

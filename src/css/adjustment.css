@@ -58,6 +58,9 @@ h6 {
     font-weight: normal;
 }
 
+.container {
+    position: relative;
+}
 .container:after, .container:before {
     content: "";
     display: table;
@@ -65,4 +68,9 @@ h6 {
 
 .container:after {
     clear: both;
+}
+
+.stuff {
+    width: 73%;
+    float: right;
 }

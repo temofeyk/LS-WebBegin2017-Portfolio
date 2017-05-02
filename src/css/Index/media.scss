@@ -1,0 +1,57 @@
+@media screen and (max-width: 992px) {
+  .stuff {
+    float: none;
+    width: 100%;
+  }
+  .about__left {
+    width: 35%;
+  }
+
+  .about__right {
+    width: 65%;
+  }
+
+  .about__picItem {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__left {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .about__right {
+    float: none;
+    width: 100%;
+  }
+
+  .contentTitle {
+    text-align: center;
+  }
+
+  .about__text {
+    height: auto;
+  }
+
+  .about__download {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about__text {
+    height: auto;
+  }
+
+  .about__picItem {
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+}

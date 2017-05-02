@@ -1,0 +1,15 @@
+.about__downloadLink {
+    padding: 7px 13px;
+    border: 2px solid #e85f61;
+    color: #e85f61;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 18px;
+    font-family: 'fira_sansbold', sans-serif;
+}
+
+.about__downloadLink:hover {
+    color: #fff;
+    background: #e85f61;
+}

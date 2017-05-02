@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+
+  .career__left {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .career__pic {
+    display: inline-block;
+  }
+
+  .career__right {
+    float: none;
+    width: 100%;
+  }
+
+  .career__block:after, .career__block:before {
+    display: none;
+  }
+
+  .career__block .career__year {
+    display: none;
+  }
+
+  .career__block {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .career__title {
+    font-size: 18px;
+  }
+  .career__occupation, .career__date {
+    font-size: 16px;
+  }
+}
+
+
+
