@@ -51,8 +51,8 @@ function addPage(pages, name, title, clearDist = false) {
 }
 addPage(pages, 'index', 'Обо мне', true);
 addPage(pages, 'career', 'Карьера');
-addPage(pages, 'portfolio', 'Портфолио', true);
-addPage(pages, 'about', 'Обо мне', true);
+addPage(pages, 'portfolio', 'Портфолио');
+addPage(pages, 'about', 'Обо мне');
 
 module.exports = pages;
 
