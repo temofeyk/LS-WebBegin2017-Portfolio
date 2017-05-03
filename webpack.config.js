@@ -2,6 +2,7 @@ let webpack = require('webpack');
 let HtmlPlugin = require('html-webpack-plugin');
 let CleanWebpackPlugin = require('clean-webpack-plugin');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 let loaders = require('./webpack.config.loaders')();
 let path = require('path');
 let pages = [];
@@ -25,7 +26,12 @@ function addPage(pages, name, title, clearDist = false) {
                     drop_debugger: false
                 }
             }),
-            new ExtractTextPlugin(`${name}_[hash].css`),
+            new ExtractTextPlugin('[hash].css'),
+            new OptimizeCssAssetsPlugin({
+                cssProcessor: require('cssnano'),
+                cssProcessorOptions: { discardComments: { removeAll: true } },
+                canPrint: true
+            }),
             new HtmlPlugin({
                 title: title,
                 template: `./${name}.hbs`,
